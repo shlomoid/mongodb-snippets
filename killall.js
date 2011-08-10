@@ -1,4 +1,4 @@
-killall = function killall(ns, wet_run) {
+function killall(ns, wet_run) {
     ns = (typeof (wet_run) != 'undefined') ? ns : "";
     wet_run = (typeof (wet_run) != 'undefined') ? wet_run : false;
     inprog = db.currentOp().inprog;
