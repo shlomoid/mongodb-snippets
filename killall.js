@@ -1,6 +1,5 @@
 function killall(ns, wet_run) {
-    ns = (typeof (wet_run) != 'undefined') ? ns : "";
-    wet_run = (typeof (wet_run) != 'undefined') ? wet_run : false;
+    ns = (typeof (ns) != 'undefined') ? ns : "";
     inprog = db.currentOp().inprog;
     for (var i in inprog) {
         var op = inprog[i];
